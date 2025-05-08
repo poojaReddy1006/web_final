@@ -20,7 +20,7 @@ export default{
   },
   methods:{
     async loadSpaceMissionData(){
-      const response = await fetch("http://localhost:7128/api");
+      const response = await fetch("https://spacemission-5xr4.onrender.com/api");
       const missionData = await response.json();
       console.log(missionData[0].missions);
       return missionData[0].missions;
